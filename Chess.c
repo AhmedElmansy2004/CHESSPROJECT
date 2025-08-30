@@ -34,7 +34,7 @@ typedef struct{
     int y;
 }Position;
 
-//The constructor
+//The constructor for position struct
 Position position(int x, int y){
   Position pos = {x, y};
   return pos;
@@ -103,7 +103,9 @@ Piece constructPiece(Type type, Color color){
 // Chess board declaration
 Piece chessBoard[8][8];
 
+//A visual to explain all controls
 //void explainControls();
+
 void intializeBoard(Piece pieces[32]);
 void printBoard();
 
