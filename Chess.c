@@ -57,8 +57,8 @@ wchar_t BLACKKINGSHAPE[] = L"\033[31m♚\033[0m";
 
 
 // Enumeration types for piece type and color
-typedef enum {PAWN = 0, KNIGHT = 1, ROOK = 2, BISHOP = 3, QUEEN = 4, KING = 5, EMPTY = 6}Type;
-typedef enum {WHITE = 0, BLACK = 1, NONE = 2}Color;
+typedef enum {PAWN = 0, KNIGHT = 1, ROOK = 2, BISHOP = 3, QUEEN = 4, KING = 5, EMPTY = 6} Type;
+typedef enum {WHITE = 0, BLACK = 1, NONE = 2} Color;
 
 // piece attributes
 typedef struct{
@@ -103,10 +103,10 @@ Piece constructPiece(Type type, Color color){
 // Chess board declaration
 Piece chessBoard[8][8];
 
-//A visual to explain all controls
-//void explainControls();
+// A visual to explain all controls
+// void explainControls();
 
-//That function fills the board with chess pieces at the beginning of the game
+// That function fills the board with chess pieces at the beginning of the game
 void intializeBoard(Piece pieces[32]);
 
 // That function prints the board and its contents in the terminal
@@ -134,8 +134,7 @@ bool moveQueen(int fromRow, int fromCol, int toRow, int toCol, Color playerColor
 Position* getKingPossibleMoves(int fromRow, int fromCol, Color playerColor);
 bool moveKing(int fromRow, int fromCol, int toRow, int toCol, Color playerColor);
 
-//void castle(char side);
-
+// void castle(char side);
 
 Position playerTurn(Color playerColor, Position OpponentEPposition);
 
