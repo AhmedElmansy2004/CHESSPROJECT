@@ -34,6 +34,7 @@ typedef struct{
     int y;
 }Position;
 
+//The constructor
 Position position(int x, int y){
   Position pos = {x, y};
   return pos;
