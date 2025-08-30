@@ -106,7 +106,10 @@ Piece chessBoard[8][8];
 //A visual to explain all controls
 //void explainControls();
 
+//That function fills the board with chess pieces at the beginning of the game
 void intializeBoard(Piece pieces[32]);
+
+// That function prints the board and its contents in the terminal
 void printBoard();
 
 int getRow(char symbol);
